@@ -35,3 +35,22 @@ Then, in a seperate terminal, run `rviz` and add a camera topic. If you select t
 
 You can  find more information about this package [here](http://wiki.ros.org/astra_camera)
 
+
+### GGCNN
+Next, to build ggcnn, 
+
+```
+cd /ggcnn_ros
+catkin build ggcnn
+```
+
+Additionally, the python dependencies can be found in `/ggcnn_ros/src/ggcnn/scripts/requirements.txt` and can be installed with `pip install -r requirements.txt`
+
+## Usage
+
+At the moment, there is only one node `ggcnn_node.py` which subscribes to the depth camera and does a forward pass through the model. The visualization option is enabled by default and will display the RGB, Depth, Q, and Angle images (refer to the paper for more information on what these last two actually mean). Additionally, it will attempt to overlay the grasping rectangle on the RGB and Depth images.
+
+There is one pretrained model currently provided. The node can be launched with, 
+```
+roslaunch ggcnn ggcnn.launch
+```

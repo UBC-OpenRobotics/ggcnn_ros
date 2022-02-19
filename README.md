@@ -54,3 +54,5 @@ There is one pretrained model currently provided. The node can be launched with,
 ```
 roslaunch ggcnn ggcnn.launch
 ```
+
+When it functions correctly, the output should resemble [this demonstration](https://www.youtube.com/watch?v=7nOoxuGEcxA&ab_channel=DougMorrison)

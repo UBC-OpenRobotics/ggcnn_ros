@@ -3,6 +3,15 @@ This repository consists of code to run Generative Grasping for antipodal grasps
 
 You can read the paper [here](https://arxiv.org/abs/1804.05172)
 
+## TODO
+
+- [x] Implement Basic Subscriber Node
+- [x] Allow visualization despite threaded execution
+- [ ] Investigate Normalization or Focal point error (unsure which one)
+- [ ] Implement Publisher for Best Grasp - investigate optimal message type
+- [ ] Implement PID control and interface with Navigation
+- [ ] Allow for Training of custom models - with existing datasets or custom
+
 ## Installation
 
 ### Depth Camera

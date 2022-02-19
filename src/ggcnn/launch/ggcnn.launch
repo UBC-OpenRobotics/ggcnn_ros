@@ -1,0 +1,8 @@
+<launch>
+	<arg name="network" default="$(find ggcnn)/scripts/ggcnn2_weights_cornell/epoch_50_cornell" />
+	<arg name="vis" default="true" />
+
+	 <!-- Start the actual move_group node/action server -->
+	<node name="ggcnn" pkg="ggcnn" type="ggcnn_node.py" respawn="false" output="screen" args="--network $(arg network) --vis"/>
+
+</launch>
